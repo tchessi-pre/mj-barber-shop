@@ -116,21 +116,21 @@ const Navbar = () => {
         <div className="absolute inset-0 bg-black backdrop-blur-md" />
       </div>
 
-      <div className="container relative z-10 mx-auto px-4 flex items-center justify-between h-16 md:h-20">
+      <div className="container relative z-10 mx-auto px-4 flex items-center justify-between h-16 md:h-20 w-full">
         <Link
           to="/"
-          className="flex items-center gap-3 font-display text-xl md:text-2xl font-bold tracking-wide group/logo"
+          className="flex items-center gap-2 md:gap-3 font-display text-lg sm:text-xl md:text-2xl font-bold tracking-wide group/logo"
           onClick={(e) => handleNavClick(e, "#accueil")}
         >
           <AvatarBadge
             imageSrc={avatarImage}
             showBadge={false}
-            className="w-10 h-10 md:w-12 md:h-12"
-            imageClassName="w-10 h-10 md:w-12 md:h-12 border-2"
+            className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12"
+            imageClassName="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 border-2"
           />
           <div className="flex flex-col">
             <span className="text-white group-hover/logo:brightness-110 transition-all leading-none">MJ BARBER</span>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-white to-primary font-script text-sm md:text-base -mt-1 opacity-90 transform -rotate-2 text-center">Chez Junior</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-white to-primary font-script text-xs sm:text-sm md:text-base -mt-1 opacity-90 transform -rotate-2 text-center">Chez Junior</span>
           </div>
         </Link>
 
@@ -179,9 +179,9 @@ const Navbar = () => {
           <SheetContent side="right" className="w-[300px] sm:w-[400px]">
             <SheetHeader>
               <SheetTitle className="text-left font-display text-xl font-bold flex items-center gap-3">
-                <AvatarBadge 
-                  imageSrc={avatarImage} 
-                  showBadge={false} 
+                <AvatarBadge
+                  imageSrc={avatarImage}
+                  showBadge={false}
                   className="w-16 h-16"
                   imageClassName="w-16 h-16 border-2 invert"
                 />
