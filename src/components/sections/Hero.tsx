@@ -76,8 +76,8 @@ const Hero = () => {
         </div>
 
         {/* Social Proof */}
-        <div className="mt-12 py-3 px-6 rounded-2xl bg-black/30 backdrop-blur-sm border border-white/5 flex items-center gap-4 animate-fade-in delay-200">
-          <div className="flex -space-x-1">
+        <div className="mt-12 py-3 px-4 rounded-2xl bg-black/30 backdrop-blur-sm border border-white/5 flex items-center gap-4 animate-fade-in delay-200">
+          <div className="flex space-x-1">
             {[...Array(5)].map((_, i) => (
               <Star key={i} className={`w-4 h-4 ${i < 4 ? "fill-primary text-primary" : "fill-primary/50 text-primary/50"}`} />
             ))}
