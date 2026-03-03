@@ -56,8 +56,8 @@ const Hero = () => {
         </div>
 
         <p className="text-zinc-300 text-base md:text-lg mb-10 max-w-xl mx-auto leading-relaxed font-light">
-          Spécialiste de la coiffure afro homme. <br className="hidden md:block" />
-          <span className="text-white font-medium">Dégradé, tresses, dreadlocks & hair design.</span>
+          Spécialiste de la coiffure afro homme à Marseille. <br className="hidden md:block" />
+          <span className="text-zinc-300 text-base md:text-lg mb-10 max-w-xl mx-auto leading-relaxed font-light">Dégradé, tresses, dreadlocks & hair design.</span>
           <br />
           <span className="inline-block mt-2 px-3 py-1 bg-white/10 rounded text-sm text-primary border border-primary/20 font-medium">Sans rendez-vous</span>
         </p>

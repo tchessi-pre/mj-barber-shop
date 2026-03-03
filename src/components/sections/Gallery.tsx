@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import ScrollReveal from '@/components/ScrollReveal';
 import galleryFade from '@/assets/gallery-fade.webp';
 import galleryDesign from '@/assets/gallery-design.webp';
@@ -8,6 +9,8 @@ import galleryKids from '@/assets/gallery-kids.webp';
 import galleryColor from '@/assets/gallery-color.webp';
 import galleryWedding from '@/assets/gallery-wedding.jpg';
 import heroBarber from '@/assets/hero-barber2.jpg';
+import { AnimatePresence, motion } from 'framer-motion';
+import { X } from 'lucide-react';
 
 const images = [
 	{ src: galleryFade, alt: 'Dégradé américain', label: 'Dégradé' },
@@ -22,6 +25,8 @@ const images = [
 ];
 
 const Galerie = () => {
+	const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
 	return (
 		<section id='galerie' className='py-20 md:py-32 bg-secondary/50'>
 			<div className='container mx-auto px-4'>
@@ -43,9 +48,9 @@ const Galerie = () => {
 					{images.map((img, i) => (
 						<ScrollReveal key={img.label} delay={i * 0.08}>
 							<div
-								className={`group relative overflow-hidden rounded-sm ${
-									i === 0 || i === 5 ? 'md:col-span-2 md:row-span-2' : ''
-								} aspect-square`}
+								className={`group relative overflow-hidden rounded-sm cursor-pointer ${i === 0 || i === 5 ? 'md:col-span-2 md:row-span-2' : ''
+									} aspect-square`}
+								onClick={() => setSelectedImage(img.src)}
 							>
 								<img
 									src={img.src}
@@ -63,6 +68,39 @@ const Galerie = () => {
 					))}
 				</div>
 			</div>
+
+			<AnimatePresence>
+				{selectedImage && (
+					<motion.div
+						initial={{ opacity: 0 }}
+						animate={{ opacity: 1 }}
+						exit={{ opacity: 0 }}
+						onClick={() => setSelectedImage(null)}
+						className='fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm p-4'
+					>
+						<motion.div
+							initial={{ scale: 0.9, opacity: 0 }}
+							animate={{ scale: 1, opacity: 1 }}
+							exit={{ scale: 0.9, opacity: 0 }}
+							className='relative max-w-5xl max-h-[90vh] w-full flex items-center justify-center'
+							onClick={(e) => e.stopPropagation()}
+						>
+							<button
+								onClick={() => setSelectedImage(null)}
+								className='absolute -top-12 right-0 text-white hover:text-primary transition-colors'
+								aria-label='Fermer'
+							>
+								<X size={32} />
+							</button>
+							<img
+								src={selectedImage}
+								alt='Zoom'
+								className='max-w-full max-h-[85vh] object-contain rounded-sm shadow-2xl'
+							/>
+						</motion.div>
+					</motion.div>
+				)}
+			</AnimatePresence>
 		</section>
 	);
 };

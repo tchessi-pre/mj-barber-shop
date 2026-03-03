@@ -33,13 +33,13 @@ const ScrollToTop = () => {
       variant="default"
       size="icon"
       className={cn(
-        "fixed bottom-8 right-8 z-50 rounded-full shadow-lg transition-all duration-300 bg-gold-gradient text-primary-foreground hover:opacity-90 hover:scale-110",
+        "fixed p-4 bottom-4 right-4 z-50 rounded-full shadow-lg transition-all duration-300 bg-gold-gradient text-primary-foreground hover:opacity-90 hover:scale-110",
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 pointer-events-none"
       )}
       onClick={scrollToTop}
       aria-label="Retour en haut"
     >
-      <ArrowUp className="h-5 w-5" />
+      <ArrowUp className="h-6 w-6" />
     </Button>
   );
 };
