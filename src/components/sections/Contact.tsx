@@ -7,8 +7,8 @@ const hours = [
   { day: "Mercredi", time: "09:00 – 20:00" },
   { day: "Jeudi", time: "09:00 – 20:00" },
   { day: "Vendredi", time: "09:00 – 20:00" },
-  { day: "Samedi", time: "09:00 – 20:00" },
-  { day: "Dimanche", time: "09:00 – 20:00" },
+  { day: "Samedi", time: "08:00 – 21:00" },
+  { day: "Dimanche", time: "10:00 – 20:00" },
 ];
 
 const Contact = () => {

@@ -6,11 +6,11 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section id="accueil" className="relative h-[90vh] min-h-[600px] flex items-center justify-center overflow-hidden">
+    <section id="accueil" className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden bg-black">
       <img src={heroImage} alt="Barbier en action chez MJ Barber" className="absolute inset-0 w-full h-full object-cover" />
       <div className="absolute inset-0 hero-overlay" />
       <div className="relative z-10 flex flex-col items-center justify-center px-4 max-w-4xl mx-auto animate-fade-in text-center">
-    
+
         {/* Avatar & Badge Group */}
         <div className="relative mb-8">
           {/* Barber Tools */}
@@ -41,7 +41,7 @@ const Hero = () => {
         </div>
 
         {/* Typography */}
-        <div className="space-y-4 mb-10">
+        <div className="space-y-4 mb-8">
           {/* <h2 className="text-white/80 font-body text-sm md:text-base tracking-[0.4em] uppercase font-light">
             Marseille 1er Arrondissement
           </h2> */}
@@ -55,11 +55,11 @@ const Hero = () => {
           </h1>
         </div>
 
-        <p className="text-zinc-300 text-base md:text-lg mb-10 max-w-xl mx-auto leading-relaxed font-light">
-          Spécialiste de la coiffure afro homme à Marseille. <br className="hidden md:block" />
-          <span className="text-zinc-300 text-base md:text-lg mb-10 max-w-xl mx-auto leading-relaxed font-light">Dégradé, tresses, dreadlocks & hair design.</span>
+        <p className="text-zinc-300 text-base md:text-lg mb-10 max-w-xl mx-auto leading-relaxed font-medium">
+          Lundi - Vendredi : 9h - 20h <br />
+          Samedi : 8h - 21h  <br /> Dimanche : 10h - 20h
           <br />
-          <span className="inline-block mt-2 px-3 py-1 bg-white/10 rounded text-sm text-primary border border-primary/20 font-medium">Sans rendez-vous</span>
+          <span className="inline-block mt-2 px-4 py-1.5 bg-gold-light text-black rounded-md text-base font-bold shadow-[0_0_15px_rgba(212,175,55,0.3)] transform hover:scale-105 transition-transform duration-300">Sans rendez-vous</span>
         </p>
 
         {/* CTA Buttons */}
@@ -76,7 +76,7 @@ const Hero = () => {
         </div>
 
         {/* Social Proof */}
-        <div className="mt-12 py-3 px-4 rounded-2xl bg-black/30 backdrop-blur-sm border border-white/5 flex items-center gap-4 animate-fade-in delay-200">
+        <div className="mt-4 py-2 px-4 rounded-2xl bg-black/30 backdrop-blur-sm border border-white/5 flex items-center gap-4 animate-fade-in delay-200">
           <div className="flex space-x-1">
             {[...Array(5)].map((_, i) => (
               <Star key={i} className={`w-4 h-4 ${i < 4 ? "fill-primary text-primary" : "fill-primary/50 text-primary/50"}`} />

@@ -9,8 +9,7 @@ const reviews = [
   { name: "Kévin L.", text: "Dégradé américain parfait à chaque visite. Le rapport qualité-prix est imbattable à Marseille.", rating: 4 },
   { name: "Ousmane B.", text: "Mes dreadlocks n'ont jamais été aussi propres et bien entretenues. Un vrai spécialiste.", rating: 5 },
   { name: "Stephane O", text: "Simple, efficace et pas cher. Un vrai barbier coiffeur dans une ambiance sympa. Je recommande ++", rating: 5 },
-  { name: "Claudie R.", text: "très bon salon mixte!!!! ( ça me paraît pas mais je suis une femme et je me suis fait couper les cheveux) bel accueil parlez anglais c mieux😉 bonne ambiance le personnel est très poli avenant aimable. petit plus ce n'est pas cher.", rating: 4 },
-  { name: "Sunshine Rising", text: "Le rapport qualité prix excellent, jamais dessus des coupes du moins jusqu'a ses dernier temps ou ils ont embauché un nouveaux coiffeur qui lui est terrifiant, il m'a détruit le crâne en ne respectent pas mes contours ainsi que la Coupe que j'ai demander, c'est bien d'embaucher des nouveaux mais quand ces derniers s'exerces sur vous ou qu'il ne sont pas bon veuillez prévenir.", rating: 5 },
+  { name: "Claudie R.", text: "très bon salon mixte!!!! ( ça me paraît pas mais je suis une femme et je me suis fait couper les cheveux) bel accueil parlez anglais c mieux😉 bonne ambiance le personnel est très poli avenant aimable. petit plus ce n'est pas cher.", rating: 4 }
 ];
 
 const Avis = () => {

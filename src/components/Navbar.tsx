@@ -168,12 +168,12 @@ const Navbar = () => {
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild>
             <Button
-              variant="outline"
+              variant="ghost"
               size="icon"
-              className="md:hidden text-foreground"
+              className="md:hidden text-gold-light hover:bg-white/10 hover:text-primary transition-colors duration-300"
               aria-label="Menu"
             >
-              <Menu className="w-6 h-6" />
+              <Menu className="w-8 h-8" />
             </Button>
           </SheetTrigger>
           <SheetContent side="right" className="w-[300px] sm:w-[400px]">
