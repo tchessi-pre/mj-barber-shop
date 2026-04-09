@@ -4,6 +4,8 @@
 		<meta charset="UTF-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="theme-color" content="#0a0a0a" />
+		<meta name="application-name" content="MJ Barber Chez Junior" />
 
 		<title>MJ Barber Chez Junior — Salon Coiffure Afro Marseille</title>
 		<meta
@@ -15,15 +17,24 @@
 			content="coiffeur afro marseille, coiffeur noaille, barbier marseille 13001, tresses, locks, dégradé, chez junior, mj barber, coiffure homme, hair design, dreadlocks"
 		/>
 		<meta name="author" content="MJ Barber" />
-		<meta name="robots" content="index, follow" />
-		<link rel="canonical" href="https://mj-barber.vercel.app/" />
+		<meta
+			name="robots"
+			content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+		/>
+		<link rel="canonical" href="https://mjbarber-chezjunior.com/" />
+		<link
+			rel="alternate"
+			href="https://mjbarber-chezjunior.com/"
+			hreflang="fr"
+		/>
 
 		<!-- Open Graph / Facebook -->
 		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://mj-barber.vercel.app/" />
+		<meta property="og:url" content="https://mjbarber-chezjunior.com/" />
+		<meta property="og:site_name" content="MJ Barber Chez Junior" />
 		<meta
 			property="og:title"
-			content="MJ Barber Chez Junior — Salon Coiffure Afro Marseille"
+			content="MJ Barber Chez Junior | Salon Coiffure Afro Marseille"
 		/>
 		<meta
 			property="og:description"
@@ -31,15 +42,21 @@
 		/>
 		<meta
 			property="og:image"
-			content="https://mj-barber.vercel.app/preview.png"
+			content="https://mjbarber-chezjunior.com/preview.png"
 		/>
+		<meta
+			property="og:image:alt"
+			content="MJ Barber Chez Junior — Barbershop afro à Marseille"
+		/>
+		<meta property="og:image:type" content="image/png" />
 		<meta property="og:image:width" content="1200" />
 		<meta property="og:image:height" content="630" />
 		<meta property="og:locale" content="fr_FR" />
 
 		<!-- Twitter -->
 		<meta property="twitter:card" content="summary_large_image" />
-		<meta property="twitter:url" content="https://mj-barber.vercel.app/" />
+		<meta property="twitter:url" content="https://mjbarber-chezjunior.com/" />
+		<meta property="twitter:domain" content="mjbarber-chezjunior.com" />
 		<meta
 			property="twitter:title"
 			content="MJ Barber Chez Junior — Salon Coiffure Afro Marseille"
@@ -50,7 +67,7 @@
 		/>
 		<meta
 			property="twitter:image"
-			content="https://mj-barber.vercel.app/preview.png"
+			content="https://mjbarber-chezjunior.com/preview.png"
 		/>
 
 		<!-- Geo Tags -->
@@ -58,6 +75,54 @@
 		<meta name="geo.placename" content="Marseille" />
 		<meta name="geo.position" content="43.2965;5.3698" />
 		<meta name="ICBM" content="43.2965, 5.3698" />
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "BarberShop",
+				"name": "MJ Barber Chez Junior",
+				"url": "https://mjbarber-chezjunior.com/",
+				"image": "https://mjbarber-chezjunior.com/preview.png",
+				"description": "Barbershop spécialisé afro à Marseille. Dégradé, tresses, dreadlocks, hair design. Sans rendez-vous.",
+				"telephone": "+33698306176",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "17 Rue Jean-Pierre-Moustier",
+					"addressLocality": "Marseille",
+					"postalCode": "13001",
+					"addressCountry": "FR"
+				},
+				"openingHoursSpecification": [
+					{
+						"@type": "OpeningHoursSpecification",
+						"dayOfWeek": [
+							"Monday",
+							"Tuesday",
+							"Wednesday",
+							"Thursday",
+							"Friday"
+						],
+						"opens": "09:00",
+						"closes": "20:00"
+					},
+					{
+						"@type": "OpeningHoursSpecification",
+						"dayOfWeek": "Saturday",
+						"opens": "08:00",
+						"closes": "21:00"
+					},
+					{
+						"@type": "OpeningHoursSpecification",
+						"dayOfWeek": "Sunday",
+						"opens": "10:00",
+						"closes": "20:00"
+					}
+				],
+				"areaServed": {
+					"@type": "City",
+					"name": "Marseille"
+				}
+			}
+		</script>
 	</head>
 
 	<body>

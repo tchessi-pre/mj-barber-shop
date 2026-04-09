@@ -2,13 +2,13 @@ import { useState } from 'react';
 import ScrollReveal from '@/components/ScrollReveal';
 import galleryFade from '@/assets/gallery-fade.webp';
 import galleryDesign from '@/assets/gallery-design.webp';
-import galleryDreads from '@/assets/gallery-dreads.jpg';
+import galleryDreads from '@/assets/gallery-dreads.webp';
 import galleryBraids from '@/assets/gallery-braids.webp';
-import galleryBraids2 from '@/assets/gallery-braids2.jpg';
+import galleryBraids2 from '@/assets/gallery-braids2.webp';
 import galleryKids from '@/assets/gallery-kids.webp';
 import galleryColor from '@/assets/gallery-color.webp';
-import galleryWedding from '@/assets/gallery-wedding.jpg';
-import heroBarber from '@/assets/hero-barber2.jpg';
+import galleryWedding from '@/assets/gallery-wedding.webp';
+import heroBarber from '@/assets/hero-barber2.webp';
 import { AnimatePresence, motion } from 'framer-motion';
 import { X } from 'lucide-react';
 

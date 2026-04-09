@@ -9,6 +9,8 @@ import ScrollToTop from "./components/ScrollToTop";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Preloader from "./components/Preloader";
+import MentionsLegales from "./pages/MentionsLegales";
+import CGV from "./pages/CGV";
 
 const queryClient = new QueryClient();
 
@@ -36,6 +38,8 @@ const App = () => {
           <ScrollToTop />
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/mentions-legales" element={<MentionsLegales />} />
+            <Route path="/cgv" element={<CGV />} />
             {/* Redirect old routes to home */}
             <Route path="/services" element={<Navigate to="/" replace />} />
             <Route path="/galerie" element={<Navigate to="/" replace />} />

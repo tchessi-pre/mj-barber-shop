@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Scissors } from "lucide-react";
 import AvatarBadge from "@/components/AvatarBadge";
-import avatarImage from "@/assets/avatar.png";
+import avatarImage from "@/assets/avatar.webp";
 
 const Preloader = () => {
   return (

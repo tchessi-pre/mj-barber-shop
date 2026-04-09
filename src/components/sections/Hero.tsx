@@ -1,13 +1,22 @@
 import { MapPin, Star, Scissors } from "lucide-react";
-import heroImage from "@/assets/hero-barber.jpg";
-import avatarImage from "@/assets/avatar.png";
+import heroImage from "@/assets/hero-barber.webp";
+import avatarImage from "@/assets/avatar.webp";
 import AvatarBadge from "@/components/AvatarBadge";
 import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
     <section id="accueil" className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden bg-black">
-      <img src={heroImage} alt="Barbier en action chez MJ Barber" className="absolute inset-0 w-full h-full object-cover" />
+      <img
+        src={heroImage}
+        alt="Barbier en action chez MJ Barber"
+        width={1920}
+        height={1088}
+        fetchPriority="high"
+        loading="eager"
+        decoding="async"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
       <div className="absolute inset-0 hero-overlay" />
       <div className="relative z-10 flex flex-col items-center justify-center px-4 max-w-4xl mx-auto animate-fade-in text-center">
 

@@ -47,6 +47,15 @@ const Footer = () => {
 
         <div className="mt-10 pt-6 border-t border-border text-center text-xs text-muted-foreground">
           © {new Date().getFullYear()} MJ Barber Chez Junior. Tous droits réservés.
+          <div className="mt-2 flex items-center justify-center gap-3">
+            <Link to="/mentions-legales" className="hover:text-primary transition-colors">
+              Mentions légales
+            </Link>
+            <span aria-hidden="true">•</span>
+            <Link to="/cgv" className="hover:text-primary transition-colors">
+              CGV
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

@@ -4,8 +4,8 @@ import { Menu, Phone } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import AvatarBadge from "@/components/AvatarBadge";
-import avatarImage from "@/assets/avatar.png";
-import heroImage from "@/assets/hero-barber.jpg";
+import avatarImage from "@/assets/avatar.webp";
+import heroImage from "@/assets/hero-barber.webp";
 import {
   Sheet,
   SheetContent,
@@ -111,6 +111,8 @@ const Navbar = () => {
         <img
           src={heroImage}
           alt="Background"
+          loading="lazy"
+          decoding="async"
           className="w-full h-full object-cover opacity-20"
         />
         <div className="absolute inset-0 bg-black backdrop-blur-md" />
