@@ -1,5 +1,5 @@
 import { MapPin, Star, Scissors } from "lucide-react";
-import heroImage from "@/assets/hero-barber.webp";
+import heroImage from "@/assets/hero-barber2.png";
 import avatarImage from "@/assets/avatar.webp";
 import AvatarBadge from "@/components/AvatarBadge";
 import { motion } from "framer-motion";
