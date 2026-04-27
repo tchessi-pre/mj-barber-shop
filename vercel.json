@@ -1,0 +1,18 @@
+{
+	"routes": [
+		{
+			"src": "/index.html",
+			"status": 308,
+			"headers": {
+				"Location": "/"
+			}
+		},
+		{
+			"handle": "filesystem"
+		},
+		{
+			"src": "/(.*)",
+			"dest": "/index.html"
+		}
+	]
+}
