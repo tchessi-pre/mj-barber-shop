@@ -3,6 +3,7 @@ import heroImage from "@/assets/hero-barber2.png";
 import avatarImage from "@/assets/avatar.webp";
 import AvatarBadge from "@/components/AvatarBadge";
 import { motion } from "framer-motion";
+import { MJ_BARBER_GOOGLE_MAPS_DIRECTIONS_URL } from "@/lib/utils";
 
 const Hero = () => {
   return (
@@ -12,7 +13,6 @@ const Hero = () => {
         alt="Barbier en action chez MJ Barber"
         width={1920}
         height={1088}
-        fetchPriority="high"
         loading="eager"
         decoding="async"
         className="absolute inset-0 w-full h-full object-cover"
@@ -55,6 +55,9 @@ const Hero = () => {
             Marseille 1er Arrondissement
           </h2> */}
           <h1 className="flex flex-col items-center justify-center">
+            <span className="text-white/80 font-body text-sm md:text-base tracking-[0.4em] uppercase font-light">
+              Barbier afro à Marseille (13001)
+            </span>
             <span className="text-white font-display text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter drop-shadow-2xl leading-none">
               MJ BARBER
             </span>
@@ -74,7 +77,7 @@ const Hero = () => {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-5 w-full justify-center items-center">
           <a
-            href="https://www.google.com/maps/dir/?api=1&destination=17+Rue+Jean-Pierre-Moustier+13001+Marseille"
+            href={MJ_BARBER_GOOGLE_MAPS_DIRECTIONS_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center justify-center gap-3 bg-black/40 backdrop-blur-md border border-white/20 text-white min-w-[240px] px-8 py-4 rounded-full text-sm font-bold tracking-wider uppercase hover:bg-white/10 hover:border-primary/50 transition-all duration-300 hover:-translate-y-1"

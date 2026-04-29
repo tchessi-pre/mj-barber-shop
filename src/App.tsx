@@ -11,6 +11,8 @@ import NotFound from "./pages/NotFound";
 import Preloader from "./components/Preloader";
 import MentionsLegales from "./pages/MentionsLegales";
 import CGV from "./pages/CGV";
+import BarbierAfroMarseille from "./pages/BarbierAfroMarseille";
+import Seo from "./components/Seo";
 
 const queryClient = new QueryClient();
 
@@ -35,9 +37,11 @@ const App = () => {
           {isLoading && <Preloader key="preloader" />}
         </AnimatePresence>
         <BrowserRouter>
+          <Seo />
           <ScrollToTop />
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/barbier-afro-marseille" element={<BarbierAfroMarseille />} />
             <Route path="/mentions-legales" element={<MentionsLegales />} />
             <Route path="/cgv" element={<CGV />} />
             {/* Redirect old routes to home */}

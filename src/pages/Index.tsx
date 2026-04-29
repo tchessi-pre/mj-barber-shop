@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import Hero from "@/components/sections/Hero";
+import SeoIntro from "@/components/sections/SeoIntro";
 import WhyUs from "@/components/sections/WhyUs";
 import Services from "@/components/sections/Services";
 import Gallery from "@/components/sections/Gallery";
@@ -10,6 +11,7 @@ const Index = () => {
   return (
     <Layout>
       <Hero />
+      <SeoIntro />
       <WhyUs />
       <Services />
       <Gallery />

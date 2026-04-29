@@ -46,7 +46,7 @@ const Galerie = () => {
 
 				<div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4'>
 					{images.map((img, i) => (
-						<ScrollReveal key={img.label} delay={i * 0.08}>
+						<ScrollReveal key={img.src} delay={i * 0.08}>
 							<div
 								className={`group relative overflow-hidden rounded-sm cursor-pointer ${i === 0 || i === 5 ? 'md:col-span-2 md:row-span-2' : ''
 									} aspect-square`}

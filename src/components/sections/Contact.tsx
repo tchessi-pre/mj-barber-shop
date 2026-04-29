@@ -1,5 +1,6 @@
 import { Phone, MapPin, Clock, Navigation } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
+import { MJ_BARBER_ADDRESS_CITY, MJ_BARBER_ADDRESS_STREET, MJ_BARBER_GOOGLE_MAPS_DIRECTIONS_URL, MJ_BARBER_PHONE_DISPLAY, MJ_BARBER_PHONE_TEL } from "@/lib/utils";
 
 const hours = [
   { day: "Lundi", time: "09:00 – 20:00" },
@@ -37,12 +38,12 @@ const Contact = () => {
                 <h2 className="font-display text-xl font-semibold mb-4 flex items-center gap-2">
                   <Phone className="w-5 h-5 text-primary" /> Téléphone
                 </h2>
-                <a href="tel:0698306176" className="text-2xl font-bold text-gold-gradient hover:opacity-80 transition-opacity">
-                  06 98 30 61 76
+                <a href={MJ_BARBER_PHONE_TEL} className="text-2xl font-bold text-gold-gradient hover:opacity-80 transition-opacity">
+                  {MJ_BARBER_PHONE_DISPLAY}
                 </a>
                 <div className="mt-4">
                   <a
-                    href="tel:0698306176"
+                    href={MJ_BARBER_PHONE_TEL}
                     className="inline-flex items-center justify-center gap-2 bg-gold-gradient text-primary-foreground px-6 py-3 rounded-sm text-sm font-bold tracking-wider uppercase w-full hover:opacity-90 transition-opacity"
                   >
                     <Phone className="w-4 h-4" />
@@ -58,10 +59,10 @@ const Contact = () => {
                   <MapPin className="w-5 h-5 text-primary" /> Adresse
                 </h2>
                 <p className="text-secondary-foreground mb-4">
-                  17 Rue Jean-Pierre-Moustier<br />13001 Marseille
+                  {MJ_BARBER_ADDRESS_STREET}<br />{MJ_BARBER_ADDRESS_CITY}
                 </p>
                 <a
-                  href="https://www.google.com/maps/dir/?api=1&destination=17+Rue+Jean-Pierre-Moustier+13001+Marseille"
+                  href={MJ_BARBER_GOOGLE_MAPS_DIRECTIONS_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 border border-primary text-primary px-6 py-3 rounded-sm text-sm font-bold tracking-wider uppercase w-full hover:bg-primary hover:text-primary-foreground transition-colors"
