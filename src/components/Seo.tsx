@@ -16,13 +16,13 @@ const Seo = () => {
       { title: string; description: string; canonical: string; ogTitle?: string; ogDescription?: string }
     > = {
       "/": {
-        title: "MJ Barber Chez Junior | Salon Coiffure Afro Marseille",
+        title: "Barber Afro Marseille – Dégradé, Tresses, Couleur | MJ Barber Chez Junior",
         description:
-          "MJ Barber Chez Junior, barbershop spécialisé afro à Marseille. Dégradé, tresses, dreadlocks, hair design. Sans rendez-vous. Note Google 4.4/5.",
+          "Barber afro à Marseille spécialisé en dégradé, tresses, dreadlocks, hair design. Sans rendez-vous.",
         canonical: `${BASE_URL}/`,
       },
       "/barbier-afro-marseille": {
-        title: "Barbier afro à Marseille (13001) | MJ Barber Chez Junior",
+        title: "Barbier afro Marseille (13001) | MJ Barber Chez Junior",
         description:
           "Barbier afro à Marseille (13001, Noailles). Dégradé américain, hair design, tresses et dreadlocks. Sans rendez-vous. MJ Barber Chez Junior.",
         canonical: `${BASE_URL}/barbier-afro-marseille`,
@@ -40,9 +40,9 @@ const Seo = () => {
     };
 
     const seo = seoByPath[pathname] ?? {
-      title: "MJ Barber Chez Junior | Salon Coiffure Afro Marseille",
+      title: "Barber Afro Marseille – Coupe, Tresses & Locks | MJ Barber Chez Junior",
       description:
-        "MJ Barber Chez Junior, barbershop spécialisé afro à Marseille. Dégradé, tresses, dreadlocks, hair design. Sans rendez-vous.",
+        "Barber afro à Marseille spécialisé en dégradé, tresses, dreadlocks, hair design. Sans rendez-vous.",
       canonical: canonicalUrl,
     };
 
@@ -66,6 +66,9 @@ const Seo = () => {
     setMeta('meta[property="twitter:title"]', seo.ogTitle ?? seo.title);
     setMeta('meta[property="twitter:description"]', seo.ogDescription ?? seo.description);
     setMeta('meta[property="twitter:url"]', seo.canonical);
+    setMeta('meta[name="robots"]', "index, follow");
+    setMeta('meta[property="og:image"]', `${BASE_URL}/preview.png`);
+    setMeta('meta[property="twitter:image"]', `${BASE_URL}/preview.png`);
   }, [location.pathname]);
 
   return null;
